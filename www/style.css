@@ -1,0 +1,72 @@
+@font-face {
+  font-family: arcade;
+  src: url("./public/fonts/ARCADE_N.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.header {
+  width: 100vw;
+  height: 120px;
+  color: #c5c5c5;
+  background-color: black;
+  margin-bottom: 50px;
+  font-family: "arcade";
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+#chip-eight-canvas {
+  border: 10px solid #c5c5c5;
+}
+
+.logo {
+  margin-right: 20px;
+  margin-top: 25px;
+  padding: 15px;
+  margin-left: 50px;
+}
+
+.rom {
+  font-size: 12px;
+  width: 130px;
+  height: 80px;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+  border: 3px solid #c5c5c5;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+  margin: 0 10px;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+}
+
+.rom:hover {
+  border: 3px solid white;
+}
