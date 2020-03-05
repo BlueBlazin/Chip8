@@ -5,7 +5,6 @@ bin/
 pkg/
 wasm-pack.log
 node_modules
-dist
 
 
 # Created by https://www.gitignore.io/api/macos,visualstudiocode
