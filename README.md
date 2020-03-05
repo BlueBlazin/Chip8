@@ -6,4 +6,4 @@ Writing a CHIP-8 emulator has almost become a right of passage in the Rust commu
 
 But the end result is this:
 
-![CHIP-8](attachment:https://github.com/BlueBlazin/Chip8/blob/master/chip8.png)
+![CHIP-8](https://raw.githubusercontent.com/BlueBlazin/Chip8/master/chip8.png)
