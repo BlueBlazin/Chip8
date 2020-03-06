@@ -6,7 +6,7 @@
     <style>
       @font-face {
         font-family: arcade;
-        src: url("./ARCADE_N.TTF");
+        src: url("/Chip8/www/public/fonts/ARCADE_N.TTF");
       }
 
       * {
@@ -35,7 +35,7 @@
 
       .canvas-container {
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: center;
         width: 100vw;
       }
@@ -52,11 +52,12 @@
       }
 
       .rom {
-        font-size: 12px;
+        font-size: 10px;
+        text-align: center;
         width: 130px;
         height: 80px;
         font-weight: normal;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "arcade", Verdana, Geneva, Tahoma, sans-serif;
         text-transform: capitalize;
         border: 3px solid #c5c5c5;
         border-bottom-left-radius: 20px;
@@ -76,6 +77,53 @@
       .rom:hover {
         border: 3px solid white;
       }
+
+      .keys {
+        color: #c5c5c5;
+      }
+
+      .keys-title {
+        display: flex;
+        justify-content: center;
+      }
+
+      .keys span {
+        font-family: "arcade";
+      }
+
+      .keys {
+        margin: 0 20px;
+      }
+
+      .keyrow {
+        display: flex;
+      }
+
+      .key {
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        border-radius: 3px;
+        border: 1px solid #c5c5c5;
+        text-transform: uppercase;
+        font-family: "arcade";
+      }
+
+      .keyrow:nth-child(3) {
+        margin-left: 10px;
+      }
+
+      .keyrow:nth-child(4) {
+        margin-left: 20px;
+      }
+
+      .keyrow:nth-child(5) {
+        margin-left: 30px;
+      }
     </style>
   </head>
   <body>
@@ -85,6 +133,33 @@
         <span class="logo">CHIP-8</span>
       </div>
       <div class="canvas-container">
+        <div class="keys">
+          <div class="keys-title"><span>Keypad</span></div>
+          <div class="keyrow">
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">4</div>
+          </div>
+          <div class="keyrow">
+            <div class="key">q</div>
+            <div class="key">w</div>
+            <div class="key">e</div>
+            <div class="key">r</div>
+          </div>
+          <div class="keyrow">
+            <div class="key">a</div>
+            <div class="key">s</div>
+            <div class="key">d</div>
+            <div class="key">f</div>
+          </div>
+          <div class="keyrow">
+            <div class="key">z</div>
+            <div class="key">x</div>
+            <div class="key">c</div>
+            <div class="key">v</div>
+          </div>
+        </div>
         <canvas id="chip-eight-canvas"></canvas>
       </div>
     </div>
